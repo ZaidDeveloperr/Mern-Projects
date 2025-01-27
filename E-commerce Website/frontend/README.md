@@ -15,4 +15,3 @@ Currently, two official plugins are available:
 2. Install packages:
 - react-router-dom
 - react-toastify
-
