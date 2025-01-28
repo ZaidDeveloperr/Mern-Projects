@@ -31,7 +31,6 @@ const Orders = () => {
             allOrdersItem.push(item)
           })
         })
-        console.log(response.data)
         setOrderData(allOrdersItem.reverse())
       }
       
