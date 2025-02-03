@@ -15,15 +15,6 @@ const port = process.env.PORT || 4000; // Set port
 connectDB();
 connectCloudinary();
 
-const allowedOrigins = [
-    "https://e-commerce-frontend-iota-three.vercel.app",
-    "https://e-commerce-admin-eight-theta.vercel.app"
-  ];
-  app.use(cors({
-    origin: allowedOrigins, // Allow only frontend & admin
-    credentials: true, // Allow cookies & authentication headers
-  }));
-
 // Middlewares
 app.use(express.json()); // Middleware to parse JSON data in requests
 app.use(cors()); // Middleware to enable CORS for all incoming requests
